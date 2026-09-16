@@ -1,0 +1,21 @@
+{
+  "name": "Granorte Marmoraria",
+  "short_name": "Granorte",
+  "description": "Marmoraria de alto padrão perto de você. Bancadas, ilhas e projetos sob medida em granito, mármore e quartzo no Rio de Janeiro.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d1b33",
+  "theme_color": "#0d1b33",
+  "icons": [
+    {
+      "src": "assets/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
