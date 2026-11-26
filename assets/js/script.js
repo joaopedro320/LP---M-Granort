@@ -65,52 +65,44 @@
     });
   });
 
-  // ---------- Formulário de orçamento -> WhatsApp ----------
+  // ---------- Links de WhatsApp (sem formulário) ----------
+  // Todo elemento com [data-wa] vira link direto pro WhatsApp com a mensagem
+  // padrão. Se data-wa tiver um valor (ex.: "Cozinha e bancada"), o tipo de
+  // projeto entra na mensagem.
   var WHATSAPP_NUMBER = '5521974793847';
+  var WA_INTRO = 'Olá, vim pelo site da Granorte e gostaria de fazer um orçamento.';
+  var WA_PRIORITY = 'Não apague a mensagem para atendimento prioritário';
 
-  var form = document.getElementById('quoteForm');
-  var submitBtn = document.getElementById('submitBtn');
-
-  function updateSubmitState() {
-    if (!form || !submitBtn) return;
-    submitBtn.disabled = !form.checkValidity();
+  function buildWhatsAppUrl(projectType) {
+    var parts = [WA_INTRO];
+    if (projectType) parts.push('Tipo de projeto: ' + projectType);
+    parts.push(WA_PRIORITY);
+    return 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(parts.join('\n\n'));
   }
 
-  if (form) {
-    form.addEventListener('input', updateSubmitState);
-    form.addEventListener('change', updateSubmitState);
-    updateSubmitState();
+  window.dataLayer = window.dataLayer || [];
 
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (!form.checkValidity()) {
-        updateSubmitState();
-        return;
-      }
+  document.querySelectorAll('[data-wa]').forEach(function (link) {
+    var projectType = link.getAttribute('data-wa') || '';
+    link.setAttribute('href', buildWhatsAppUrl(projectType));
+    link.setAttribute('target', '_blank');
+    link.setAttribute('rel', 'noopener');
 
-      var nome = form.nome.value.trim();
-      var whatsapp = form.whatsapp.value.trim();
-      var bairro = form.bairro.value;
-      var projeto = form.projeto.value;
-      var mensagem = form.mensagem.value.trim();
-
-      var lines = [
-        'Olá! Gostaria de solicitar um orçamento na Granorte Marmoraria.',
-        '',
-        'Nome: ' + nome,
-        'WhatsApp: ' + whatsapp,
-        'Bairro ou região: ' + bairro,
-        'Tipo de projeto: ' + projeto
-      ];
-
-      if (mensagem) {
-        lines.push('Detalhes do projeto: ' + mensagem);
-      }
-
-      var text = encodeURIComponent(lines.join('\n'));
-      var url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + text;
-
-      window.open(url, '_blank', 'noopener');
+    link.addEventListener('click', function () {
+      window.dataLayer.push({
+        event: 'whatsapp_click',
+        cta_location: link.getAttribute('data-cta') || '',
+        project_type: projectType
+      });
     });
-  }
+  });
+
+  // ---------- Antes e depois ----------
+  document.querySelectorAll('.ba').forEach(function (slider) {
+    var range = slider.querySelector('input[type="range"]');
+    if (!range) return;
+    function update() { slider.style.setProperty('--pos', range.value + '%'); }
+    range.addEventListener('input', update);
+    update();
+  });
 })();
