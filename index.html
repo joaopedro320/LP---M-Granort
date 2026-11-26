@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Granorte Marmoraria | Marmoraria de Alto Padrão no Rio de Janeiro</title>
-<meta name="description" content="Marmoraria de alto padrão perto de você. Bancadas, ilhas e projetos sob medida em granito, mármore e quartzo para Barra da Tijuca, Recreio, Leblon e Ipanema. Medição, corte e instalação com prazo rigoroso.">
+<meta name="description" content="Peça seu orçamento direto no WhatsApp. Mármore, granito e quartzo com medição no local, fabricação própria e instalação no prazo da sua obra. Barra da Tijuca, Recreio, Leblon e Ipanema.">
 <link rel="canonical" href="https://lp.granortemarmoraria.com.br/">
 
 <!-- Favicons -->
@@ -37,8 +37,8 @@
 <meta name="geo.placename" content="Rio de Janeiro">
 
 <!-- Preload hero assets -->
-<link rel="preload" as="image" href="assets/img/gallery/travertino-instalado.jpg" fetchpriority="high">
-<link rel="preload" as="image" href="assets/img/hero-bg.jpg">
+<link rel="preload" as="image" href="assets/img/projetos/hero-mobile.jpg" media="(max-width: 959px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/img/projetos/hero-desktop.jpg" media="(min-width: 960px)" fetchpriority="high">
 <link rel="preload" as="image" href="assets/img/logo-compact.png">
 
 <!-- Fonts -->
@@ -104,6 +104,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     },
     {
       "@type": "Question",
+      "name": "Como peço o orçamento?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Direto pelo WhatsApp: toque em um dos botões da página e a conversa abre com a mensagem pronta. Se puder, mande fotos do ambiente, medidas aproximadas ou o projeto do arquiteto. O orçamento é gratuito e sem compromisso."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Quais materiais a Granorte trabalha?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -115,7 +123,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "name": "Como funciona o processo, da medição até a instalação?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "O processo segue quatro etapas: medição no local, corte e furação (para cubas, cooktops e torneiras), acabamento e polimento, e por fim entrega e instalação."
+        "text": "O processo segue quatro etapas: orçamento pelo WhatsApp, medição no local, fabricação na nossa fábrica (corte, furação, acabamento e polimento) e, por fim, entrega e instalação pela nossa equipe."
       }
     },
     {
@@ -144,7 +152,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<a href="#orcamento" class="visually-hidden">Pular para o formulário de orçamento</a>
+<!--
+  CONTATO: não há formulário nesta página. Todo elemento com o atributo data-wa
+  vira link direto pro WhatsApp (ver assets/js/script.js). O valor de data-wa é
+  o tipo de projeto que entra na mensagem; data-cta identifica o ponto da página
+  no evento "whatsapp_click" do dataLayer (GTM).
+-->
 
 <!-- ===================== HEADER ===================== -->
 <header class="site-header" id="siteHeader">
@@ -155,17 +168,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <nav class="main-nav" aria-label="Navegação principal">
       <ul>
-        <li><a href="#sobre">Sobre</a></li>
         <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
         <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#diferenciais">Diferenciais</a></li>
-        <li><a href="#atendimento">Atendimento</a></li>
         <li><a href="#faq">Dúvidas</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
 
     <div class="header-cta">
-      <a href="#orcamento" class="btn btn-gold">
+      <a href="https://wa.me/5521974793847" data-wa="" data-cta="header" class="btn btn-wa">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.34 2 11.68c0 1.94.58 3.75 1.58 5.28L2 22l5.2-1.53a10.4 10.4 0 0 0 4.8 1.2c5.52 0 10-4.34 10-9.99C22 6.34 17.52 2 12 2Zm0 18.15c-1.6 0-3.09-.44-4.36-1.2l-.31-.18-3.09.91.93-3-.2-.32a8.06 8.06 0 0 1-1.32-4.38c0-4.5 3.75-8.15 8.35-8.15s8.35 3.65 8.35 8.15-3.75 8.17-8.35 8.17Zm4.6-6.1c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.36-.78-1.86-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.06s.89 2.39 1.02 2.56c.13.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29Z"/></svg>
         Falar no WhatsApp
       </a>
@@ -184,28 +196,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </button>
   </div>
   <ul>
-    <li><a href="#sobre">Sobre</a></li>
     <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#sobre">Sobre</a></li>
     <li><a href="#servicos">Serviços</a></li>
-    <li><a href="#diferenciais">Diferenciais</a></li>
-    <li><a href="#atendimento">Atendimento</a></li>
     <li><a href="#faq">Dúvidas</a></li>
+    <li><a href="#contato">Contato</a></li>
   </ul>
-  <a href="#orcamento" class="btn btn-gold btn-block">Solicitar orçamento</a>
+  <a href="https://wa.me/5521974793847" data-wa="" data-cta="menu-mobile" class="btn btn-wa btn-block">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.34 2 11.68c0 1.94.58 3.75 1.58 5.28L2 22l5.2-1.53a10.4 10.4 0 0 0 4.8 1.2c5.52 0 10-4.34 10-9.99C22 6.34 17.52 2 12 2Zm0 18.15c-1.6 0-3.09-.44-4.36-1.2l-.31-.18-3.09.91.93-3-.2-.32a8.06 8.06 0 0 1-1.32-4.38c0-4.5 3.75-8.15 8.35-8.15s8.35 3.65 8.35 8.15-3.75 8.17-8.35 8.17Zm4.6-6.1c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.36-.78-1.86-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.06s.89 2.39 1.02 2.56c.13.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29Z"/></svg>
+    Solicitar orçamento no WhatsApp
+  </a>
 </div>
 
 <main id="topo">
 
   <!-- ===================== HERO ===================== -->
   <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <picture>
+        <source media="(max-width: 959px)" srcset="assets/img/projetos/hero-mobile.jpg">
+        <img src="assets/img/projetos/hero-desktop.jpg" alt="" width="1280" height="720" fetchpriority="high">
+      </picture>
+    </div>
     <div class="container">
       <div class="hero-copy">
-        <h1>Marmoraria de <em>alto padrão</em> perto de você</h1>
-        <p class="lede">Bancadas, ilhas e projetos sob medida em granito, mármore e quartzo, com medição precisa, prazo rigoroso e acabamento impecável para a Barra da Tijuca, Recreio, Leblon e Ipanema.</p>
+        <h1>Peça seu orçamento <em>direto no WhatsApp</em></h1>
+        <p class="lede">Mármore, granito e quartzo com medição no local, fabricação própria e instalação no prazo da sua obra.</p>
         <div class="hero-cta-row">
-          <a href="#orcamento" class="btn btn-gold">Solicitar orçamento</a>
-          <a href="#servicos" class="btn btn-outline-light">Ver serviços</a>
+          <a href="https://wa.me/5521974793847" data-wa="" data-cta="hero" class="btn btn-wa btn-lg">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.34 2 11.68c0 1.94.58 3.75 1.58 5.28L2 22l5.2-1.53a10.4 10.4 0 0 0 4.8 1.2c5.52 0 10-4.34 10-9.99C22 6.34 17.52 2 12 2Zm0 18.15c-1.6 0-3.09-.44-4.36-1.2l-.31-.18-3.09.91.93-3-.2-.32a8.06 8.06 0 0 1-1.32-4.38c0-4.5 3.75-8.15 8.35-8.15s8.35 3.65 8.35 8.15-3.75 8.17-8.35 8.17Zm4.6-6.1c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.36-.78-1.86-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.06s.89 2.39 1.02 2.56c.13.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29Z"/></svg>
+            Solicitar orçamento no WhatsApp
+          </a>
+          <a href="#projetos" class="btn btn-outline-light btn-lg">Ver projetos realizados</a>
         </div>
+        <p class="cta-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>
+          Orçamento gratuito e sem compromisso
+        </p>
         <div class="hero-tags">
           <span>Barra da Tijuca</span>
           <span>Recreio dos Bandeirantes</span>
@@ -214,47 +241,176 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-      <div class="hero-panel">
-        <div class="hero-photo">
-          <img src="assets/img/gallery/travertino-instalado.jpg" alt="Bancada dupla em travertino, curva, feita sob medida pela Granorte Marmoraria" width="960" height="1280" loading="eager" fetchpriority="high">
+      <div class="picker">
+        <p class="picker-title">Qual é o seu projeto?</p>
+        <p class="picker-sub">Toque no tipo de projeto e fale com a gente no WhatsApp.</p>
+        <div class="picker-grid">
+          <a href="https://wa.me/5521974793847" data-wa="Cozinha e bancada" data-cta="hero-tipo-projeto" class="picker-opt">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18v4H3Z"/><path d="M5 14v6M19 14v6M8 6h8M12 6V4"/></svg></span>
+            Cozinha e bancada
+          </a>
+          <a href="https://wa.me/5521974793847" data-wa="Banheiro e lavabo" data-cta="hero-tipo-projeto" class="picker-opt">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v3H4Z"/><path d="M2 13h20l-2 8H4Z"/></svg></span>
+            Banheiro e lavabo
+          </a>
+          <a href="https://wa.me/5521974793847" data-wa="Área gourmet" data-cta="hero-tipo-projeto" class="picker-opt">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18M5 12V8h14v4M6 12v8M18 12v8M9 4l1 4M15 4l-1 4"/></svg></span>
+            Área gourmet
+          </a>
+          <a href="https://wa.me/5521974793847" data-wa="Escada e revestimento" data-cta="hero-tipo-projeto" class="picker-opt">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h5v-5h5v-5h5V6h3"/></svg></span>
+            Escada e revestimento
+          </a>
+          <a href="https://wa.me/5521974793847" data-wa="Comercial" data-cta="hero-tipo-projeto" class="picker-opt">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5l8-3 8 3v16M9 21v-5h6v5M8 9h2M14 9h2M8 13h2M14 13h2"/></svg></span>
+            Comercial
+          </a>
+          <a href="https://wa.me/5521974793847" data-wa="Outro" data-cta="hero-tipo-projeto" class="picker-opt">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
+            Outro
+          </a>
         </div>
-        <p class="hero-panel-title">Por que fechar com a Granorte</p>
-        <ul class="hero-list">
-          <li>
-            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
-            <span>Prazo alinhado com o cronograma da sua obra, sem enrolação</span>
-          </li>
-          <li>
-            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5Z"/></svg></span>
-            <span>Medição exata e acabamento sem necessidade de retrabalho</span>
-          </li>
-        </ul>
+        <div class="picker-foot">
+          <span>Orçamento gratuito</span>
+          <span>Resposta em até 24h</span>
+          <span>Visita técnica</span>
+        </div>
       </div>
     </div>
     <img src="assets/img/mark-source.png" alt="" class="hero-mark" aria-hidden="true" loading="lazy">
   </section>
 
-  <!-- ===================== VALUE STRIP ===================== -->
-  <section class="value-strip">
+  <!-- ===================== NÚMEROS ===================== -->
+  <!-- Números informados pela Granorte (mesmos do site lp.granortemarmoraria.com.br). Revisar com o cliente antes de alterar. -->
+  <section class="stats" aria-label="A Granorte em números">
+    <div class="container stats-grid">
+      <div class="stat"><strong>Desde 1997</strong><span>no mercado de pedras</span></div>
+      <div class="stat"><strong>+2.000</strong><span>projetos entregues</span></div>
+      <div class="stat"><strong>100%</strong><span>fabricação e equipe próprias</span></div>
+      <div class="stat"><strong>24h</strong><span>pra receber seu orçamento</span></div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJETOS ===================== -->
+  <section class="projects section-pad" id="projetos">
     <div class="container">
-      <div class="value-item">
-        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span>
-        <span>Medição e projeto sob medida</span>
+      <div class="section-head">
+        <h2>Projetos realizados</h2>
+        <p>Obras reais da Granorte, com o ambiente e o material de cada peça.</p>
       </div>
-      <div class="value-item">
-        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span>
-        <span>Fabricação, entrega e instalação num só processo</span>
+
+      <div class="gallery-grid">
+        <figure class="gallery-card">
+          <img src="assets/img/projetos/cozinha-ilha-cascata-calacatta.jpg" alt="Ilha em cascata com bancada e frontão no mesmo material branco com veios dourados, executada pela Granorte" width="899" height="1599" loading="lazy">
+          
+          <figcaption><strong>Cozinha com ilha em cascata</strong><span>Pedra branca com veios dourados</span></figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="assets/img/projetos/area-gourmet-marmore-branco.jpg" alt="Área gourmet com bancada em L e mesa em cascata de mármore branco" width="1200" height="675" loading="lazy">
+          
+          <figcaption><strong>Área gourmet com mesa em cascata</strong><span>Mármore branco</span></figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="assets/img/projetos/banheiro-marmore-verde-depois.jpg" alt="Banheiro com parede revestida em mármore verde e bancada branca com cuba redonda" width="903" height="1200" loading="lazy">
+          
+          <figcaption><strong>Banheiro com parede em mármore verde</strong><span>Mármore verde e bancada branca</span></figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="assets/img/gallery/travertino-instalado.jpg" alt="Bancada dupla curva em travertino com cubas de apoio, instalada pela Granorte" width="960" height="1280" loading="lazy">
+          
+          <figcaption><strong>Bancada dupla curva</strong><span>Travertino</span></figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="assets/img/projetos/cozinha-peninsula-quartzo.jpg" alt="Cozinha com bancada e península de ponta arredondada em quartzo branco" width="1200" height="904" loading="lazy">
+          
+          <figcaption><strong>Cozinha com península orgânica</strong><span>Quartzo branco</span></figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="assets/img/gallery/onix-lavatorio-01.jpg" alt="Lavatório em pedra ornamental com parede em ônix e metais dourados" width="960" height="960" loading="lazy">
+          
+          <figcaption><strong>Lavatório com parede em ônix</strong><span>Ônix e pedra ornamental</span></figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="assets/img/projetos/cozinha-quartzo-branco.jpg" alt="Cozinha planejada com bancada em quartzo branco e cooktop" width="900" height="1200" loading="lazy">
+          
+          <figcaption><strong>Cozinha planejada</strong><span>Quartzo branco</span></figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="assets/img/projetos/banheiro-quartzo-bege.jpg" alt="Banheiro com bancada em quartzo bege e cuba de apoio" width="900" height="1200" loading="lazy">
+          
+          <figcaption><strong>Banheiro com bancada e nicho</strong><span>Quartzo bege</span></figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="assets/img/gallery/cuba-esculpida-instalado.jpg" alt="Bancada com cuba esculpida na própria peça, instalada em banheiro" width="919" height="722" loading="lazy">
+          
+          <figcaption><strong>Bancada com cuba esculpida</strong><span>Pedra natural, sem juntas</span></figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="assets/img/projetos/cozinha-lavanderia-quartzo.jpg" alt="Cozinha integrada à lavanderia com bancadas em quartzo branco" width="900" height="1200" loading="lazy">
+          
+          <figcaption><strong>Cozinha e lavanderia integradas</strong><span>Quartzo branco</span></figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="assets/img/projetos/lavabo-granito-branco.jpg" alt="Lavabo com bancada suspensa em granito branco e cuba de apoio" width="904" height="1200" loading="lazy">
+          
+          <figcaption><strong>Lavabo com bancada suspensa</strong><span>Granito branco</span></figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="assets/img/projetos/cozinha-granito-cuba-gourmet.jpg" alt="Bancada de cozinha em granito branco com cuba gourmet de inox" width="675" height="1200" loading="lazy">
+          
+          <figcaption><strong>Cozinha com cuba gourmet</strong><span>Granito branco</span></figcaption>
+        </figure>
       </div>
-      <div class="value-item">
-        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></span>
-        <span>Foco em obras e reformas de alto padrão</span>
-      </div>
-      <div class="value-item">
-        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15.5a2 2 0 0 1-2 2H8l-5 4V5.5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></span>
-        <span>Atendimento direto, sem intermediários</span>
+
+      <div class="cta-inline">
+        <p>Quer um projeto como esses?<small>Mande o seu ambiente e a gente indica o material e o valor.</small></p>
+        <a href="https://wa.me/5521974793847" data-wa="" data-cta="projetos" class="btn btn-wa">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.34 2 11.68c0 1.94.58 3.75 1.58 5.28L2 22l5.2-1.53a10.4 10.4 0 0 0 4.8 1.2c5.52 0 10-4.34 10-9.99C22 6.34 17.52 2 12 2Zm0 18.15c-1.6 0-3.09-.44-4.36-1.2l-.31-.18-3.09.91.93-3-.2-.32a8.06 8.06 0 0 1-1.32-4.38c0-4.5 3.75-8.15 8.35-8.15s8.35 3.65 8.35 8.15-3.75 8.17-8.35 8.17Zm4.6-6.1c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.36-.78-1.86-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.06s.89 2.39 1.02 2.56c.13.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29Z"/></svg>
+          Pedir orçamento no WhatsApp
+        </a>
       </div>
     </div>
   </section>
+
+  <!-- ===================== ANTES E DEPOIS ===================== -->
+  <section class="ba-section section-pad" id="antes-depois">
+    <div class="container">
+      <div class="section-head">
+        <h2>Da fábrica à obra</h2>
+        <p>Arraste pra comparar a peça na nossa fabricação e depois de instalada.</p>
+      </div>
+
+      <div class="ba-grid">
+        <div class="ba-item">
+          <div class="ba">
+            <img src="assets/img/projetos/banheiro-marmore-verde-depois.jpg" alt="Mesma parede com a bancada branca e a cuba instaladas" width="903" height="1200" loading="lazy" class="ba-after">
+            <img src="assets/img/projetos/banheiro-marmore-verde-antes.jpg" alt="Parede em mármore verde antes da instalação da bancada" width="903" height="1200" loading="lazy" class="ba-before">
+            <span class="ba-label is-before">Antes</span>
+            <span class="ba-label is-after">Depois</span>
+            <input type="range" min="0" max="100" value="50" aria-label="Comparar bancada de banheiro: antes e depois">
+            <span class="ba-handle"></span>
+          </div>
+          <h3>Bancada de banheiro</h3>
+          <p>Parede em mármore verde, antes e depois da bancada sob medida.</p>
+        </div>
+        <div class="ba-item">
+          <div class="ba">
+            <img src="assets/img/gallery/travertino-instalado.jpg" alt="Bancada curva em travertino instalada no banheiro" width="960" height="1280" loading="lazy" class="ba-after">
+            <img src="assets/img/gallery/travertino-fabrica.jpg" alt="Bancada curva em travertino sendo finalizada na fábrica da Granorte" width="960" height="1280" loading="lazy" class="ba-before">
+            <span class="ba-label is-before">Fabricação</span>
+            <span class="ba-label is-after">Instalado</span>
+            <input type="range" min="0" max="100" value="50" aria-label="Comparar bancada curva em travertino: fabricação e instalado">
+            <span class="ba-handle"></span>
+          </div>
+          <h3>Bancada curva em travertino</h3>
+          <p>Da nossa fábrica direto pra obra, com as cubas de apoio no lugar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEPOIMENTOS ===================== -->
+  <!-- Depoimentos: aguardando depoimentos reais enviados pelo cliente (ver README do PR). -->
 
   <!-- ===================== SOBRE ===================== -->
   <section class="about section-pad" id="sobre">
@@ -264,12 +420,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h2>Uma marmoraria pensada pra atender de perto</h2>
         </div>
         <p>A Granorte nasceu pra resolver um problema comum em obras e reformas no Rio: encontrar uma marmoraria que entrega no prazo combinado, com atendimento próximo e preço justo, do orçamento à instalação.</p>
-        <p>Cuidamos de cada etapa, da medição no local ao acabamento final, pra sua obra não parar esperando bancada. Trabalhamos com pedras ornamentais como granitos, mármores e quartzos, em peças sob medida para cozinhas, banheiros e áreas de convivência.</p>
-        <p>Hoje concentramos o atendimento em projetos de alto padrão na Barra da Tijuca, no Recreio dos Bandeirantes, no Leblon e em Ipanema, direto com arquitetos, designers, engenheiros e clientes finais em reforma ou construção.</p>
+        <p>Cuidamos de cada etapa, da medição no local ao acabamento final, pra sua obra não parar esperando bancada. Trabalhamos com granitos, mármores e quartzos em peças sob medida para cozinhas, banheiros, áreas gourmet e escadas.</p>
+        <p>Atendemos arquitetos, designers, engenheiros e clientes finais em reforma ou construção, com foco em projetos de alto padrão na Barra da Tijuca, no Recreio, no Leblon e em Ipanema.</p>
       </div>
 
       <div class="about-visual">
-        <img class="about-photo" src="assets/img/gallery/onix-lavatorio-01.jpg" alt="Lavatório em pedra ornamental com detalhes dourados, projeto executado pela Granorte Marmoraria" width="960" height="960" loading="lazy">
+        <img src="assets/img/gallery/onix-lavatorio-02.jpg" alt="Bancada de lavatório em pedra com torneira dourada e parede em ônix" width="960" height="960" class="about-photo" loading="lazy">
         <div class="about-visual-inner">
           <div class="about-visual-mark">
             <img src="assets/img/mark-source.png" alt="" width="220" height="49" loading="lazy">
@@ -281,67 +437,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="aud-card">
               <strong>Clientes em reforma ou construção</strong>
-              <p>Acabamentos sob medida, como bancadas, lavatórios e áreas gourmet, com atendimento consultivo.</p>
+              <p>Bancadas, lavatórios e áreas gourmet sob medida, com atendimento consultivo.</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== PROJETOS ===================== -->
-  <section class="projects section-pad" id="projetos">
-    <div class="container">
-      <div class="section-head">
-        <h2>Projetos realizados</h2>
-        <p>Uma amostra de peças sob medida entregues pela Granorte, da fabricação à instalação final.</p>
-      </div>
-
-      <div class="project-grid">
-        <div class="project-card">
-          <div class="project-photos">
-            <figure>
-              <img src="assets/img/gallery/travertino-fabrica.jpg" alt="Bancada curva em travertino sendo finalizada na fábrica da Granorte Marmoraria" width="1200" height="1600" loading="lazy">
-              <figcaption>Fabricação</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/img/gallery/travertino-instalado.jpg" alt="Bancada dupla em travertino instalada em banheiro de alto padrão" width="960" height="1280" loading="lazy">
-            </figure>
-          </div>
-          <div class="project-info">
-            <h3>Bancada dupla em travertino</h3>
-            <p>Peça curva sob medida, da fabricação na oficina até a instalação final com cubas de apoio.</p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-photos">
-            <figure>
-              <img src="assets/img/gallery/cuba-esculpida-fabrica.jpg" alt="Bancada com cuba esculpida em pedra, recém finalizada na fábrica" width="1257" height="988" loading="lazy">
-              <figcaption>Fabricação</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/img/gallery/cuba-esculpida-instalado.jpg" alt="Bancada com cuba esculpida instalada em banheiro planejado" width="919" height="722" loading="lazy">
-            </figure>
-          </div>
-          <div class="project-info">
-            <h3>Bancada com cuba esculpida</h3>
-            <p>Cuba integrada esculpida na própria peça, sem juntas, com acabamento espelhado.</p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-photos">
-            <figure>
-              <img src="assets/img/gallery/onix-lavatorio-01.jpg" alt="Lavatório em pedra ornamental com parede revestida em ônix e detalhes dourados" width="960" height="960" loading="lazy">
-            </figure>
-            <figure>
-              <img src="assets/img/gallery/onix-lavatorio-02.jpg" alt="Bancada de lavatório em pedra com torneira dourada e parede em ônix" width="960" height="960" loading="lazy">
-            </figure>
-          </div>
-          <div class="project-info">
-            <h3>Lavatório em ônix e pedra ornamental</h3>
-            <p>Bancada suspensa com parede de destaque em ônix, torneira e detalhes em dourado.</p>
           </div>
         </div>
       </div>
@@ -353,45 +450,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
       <div class="section-head">
         <h2>O que fazemos</h2>
-        <p>Fabricação sob medida em pedras ornamentais, da medição à instalação final.</p>
+        <p>Fabricação sob medida em pedras naturais e quartzo, da medição à instalação final.</p>
       </div>
 
       <div class="service-grid">
         <div class="service-card featured">
           <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="20" height="4" rx="1"/><path d="M4 13v6h16v-6M9 6h6l1 3H8Z"/></svg></span>
-          <h3>Fabricação e instalação de bancadas e pias</h3>
-          <p>Nosso serviço de maior procura: cozinhas, banheiros e áreas gourmet, com medição, corte, acabamento e instalação num único processo.</p>
+          <h3>Bancadas e pias de cozinha e banheiro</h3>
+          <p>Nosso serviço de maior procura: medição, corte, acabamento e instalação num único processo.</p>
           <span class="tag">Mais procurado</span>
         </div>
 
         <div class="service-card">
           <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="8" rx="1"/><path d="M6 8V6h12v2"/></svg></span>
           <h3>Ilhas de cozinha</h3>
-          <p>Peças centrais sob medida, pensadas pra unir estética e funcionalidade no dia a dia.</p>
+          <p>Peças centrais sob medida, inclusive com cascata, pra unir estética e uso diário.</p>
         </div>
 
         <div class="service-card">
           <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v3H4Z"/><path d="M2 13h20l-2 8H4Z"/></svg></span>
-          <h3>Lavatórios</h3>
-          <p>Cubas e bancadas de banheiro com corte e furação exatos para torneiras e acessórios.</p>
+          <h3>Lavatórios e cubas esculpidas</h3>
+          <p>Bancadas de banheiro e lavabo com corte e furação exatos para torneiras e acessórios.</p>
         </div>
 
         <div class="service-card">
-          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18M5 20V9l7-6 7 6v11"/></svg></span>
-          <h3>Soleiras e pingadeiras</h3>
-          <p>Peças de acabamento sob medida para portas, janelas e vãos, com corte de precisão.</p>
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M5 12V8h14v4M6 12v8M18 12v8M9 4l1 4M15 4l-1 4"/></svg></span>
+          <h3>Áreas gourmet</h3>
+          <p>Bancadas e churrasqueiras em pedra resistente a calor, gordura e uso intenso.</p>
         </div>
 
         <div class="service-card">
-          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/></svg></span>
-          <h3>Nichos</h3>
-          <p>Nichos sob medida para banheiros e áreas de convivência, integrados ao restante do projeto.</p>
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h5v-5h5v-5h5V6h3"/></svg></span>
+          <h3>Escadas e revestimentos</h3>
+          <p>Degraus, espelhos, soleiras, peitoris e paredes revestidas em pedra.</p>
         </div>
 
         <div class="service-card">
           <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3l7 7-9 9-7-7Z"/><path d="M3 21l4-1 10-10"/></svg></span>
           <h3>Reparos e restauração</h3>
-          <p>Manutenção, reparo e restauração de peças em pedra já instaladas.</p>
+          <p>Manutenção, polimento e restauração de peças em pedra já instaladas.</p>
         </div>
       </div>
 
@@ -430,23 +527,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="process-grid">
         <div class="process-step">
           <div class="step-index">01</div>
-          <h3>Medição no local</h3>
-          <p>Levantamos as medidas exatas do ambiente antes de qualquer corte.</p>
+          <h3>Orçamento no WhatsApp</h3>
+          <p>Você manda o ambiente, as medidas ou o projeto, e a gente orienta na escolha do material.</p>
         </div>
         <div class="process-step">
           <div class="step-index">02</div>
-          <h3>Corte e furação</h3>
-          <p>Corte de precisão e furação para cubas, cooktops e torneiras.</p>
+          <h3>Medição no local</h3>
+          <p>Visita técnica pra levantar as medidas exatas antes de qualquer corte.</p>
         </div>
         <div class="process-step">
           <div class="step-index">03</div>
-          <h3>Acabamento e polimento</h3>
-          <p>Bordas e superfície trabalhadas até o acabamento final combinado.</p>
+          <h3>Fabricação própria</h3>
+          <p>Corte, furação, acabamento e polimento feitos na nossa fábrica.</p>
         </div>
         <div class="process-step">
           <div class="step-index">04</div>
           <h3>Entrega e instalação</h3>
-          <p>Transporte e instalação no prazo, prontos pra uso.</p>
+          <p>Equipe própria instala no prazo combinado, pronto pra uso.</p>
         </div>
       </div>
     </div>
@@ -462,16 +559,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="diff-grid">
         <div class="diff-card">
           <h3>Pontualidade rigorosa</h3>
-          <p>Garantia de prazo pra não atrasar o cronograma da sua obra.</p>
+          <p>Prazo alinhado com o cronograma da sua obra, sem enrolação.</p>
         </div>
         <div class="diff-card">
           <h3>Precisão nos cortes</h3>
-          <p>Medição exata e acabamento impecável, sem necessidade de retrabalho na instalação.</p>
+          <p>Medição exata e acabamento impecável, sem retrabalho na instalação.</p>
         </div>
         <div class="diff-card">
           <h3>Atendimento consultivo</h3>
-          <p>Auxílio técnico na escolha do material ideal pra cada ambiente e orçamento.</p>
+          <p>Ajuda técnica na escolha do material ideal pra cada ambiente e orçamento.</p>
         </div>
+      </div>
+
+      <div class="cta-inline">
+        <p>Já sabe o que precisa?<small>Fale com a nossa equipe e receba o orçamento sem compromisso.</small></p>
+        <a href="https://wa.me/5521974793847" data-wa="" data-cta="diferenciais" class="btn btn-wa">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.34 2 11.68c0 1.94.58 3.75 1.58 5.28L2 22l5.2-1.53a10.4 10.4 0 0 0 4.8 1.2c5.52 0 10-4.34 10-9.99C22 6.34 17.52 2 12 2Zm0 18.15c-1.6 0-3.09-.44-4.36-1.2l-.31-.18-3.09.91.93-3-.2-.32a8.06 8.06 0 0 1-1.32-4.38c0-4.5 3.75-8.15 8.35-8.15s8.35 3.65 8.35 8.15-3.75 8.17-8.35 8.17Zm4.6-6.1c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.36-.78-1.86-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.06s.89 2.39 1.02 2.56c.13.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29Z"/></svg>
+          Falar no WhatsApp
+        </a>
       </div>
     </div>
   </section>
@@ -516,6 +621,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
+            Como peço o orçamento?
+            <span class="plus"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Direto pelo WhatsApp: toque em um dos botões desta página e a conversa abre com a mensagem pronta. Se puder, mande fotos do ambiente, medidas aproximadas ou o projeto do arquiteto. O orçamento é gratuito e sem compromisso.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
             Quais materiais vocês trabalham?
             <span class="plus"></span>
           </button>
@@ -530,7 +645,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="plus"></span>
           </button>
           <div class="faq-answer">
-            <p>O processo segue quatro etapas: medição no local, corte e furação (para cubas, cooktops e torneiras), acabamento e polimento, e por fim entrega e instalação.</p>
+            <p>O processo segue quatro etapas: orçamento pelo WhatsApp, medição no local, fabricação na nossa fábrica (corte, furação, acabamento e polimento) e, por fim, entrega e instalação pela nossa equipe.</p>
           </div>
         </div>
 
@@ -557,16 +672,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- ===================== FORMULÁRIO ===================== -->
-  <section class="quote section-pad" id="orcamento">
-    <div class="container quote-grid">
-      <div class="quote-intro">
-        <h2>Solicite seu orçamento sem compromisso</h2>
-        <p>Conte um pouco sobre o seu projeto e a gente te responde no WhatsApp com os próximos passos.</p>
+  <!-- ===================== CHAMADA FINAL ===================== -->
+  <section class="final-cta section-pad" id="contato">
+    <div class="final-bg" aria-hidden="true">
+      <img src="assets/img/projetos/cozinha-ilha-cascata-calacatta.jpg" alt="" width="899" height="1599" loading="lazy">
+    </div>
+    <div class="container final-grid">
+      <div class="final-copy">
+        <h2>Tem um projeto em mente? Mande uma mensagem.</h2>
+        <p>Sem formulário e sem espera: escolha o tipo de projeto e a conversa abre no WhatsApp com a nossa equipe.</p>
+        <div class="hero-cta-row">
+          <a href="https://wa.me/5521974793847" data-wa="" data-cta="chamada-final" class="btn btn-wa btn-lg">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.34 2 11.68c0 1.94.58 3.75 1.58 5.28L2 22l5.2-1.53a10.4 10.4 0 0 0 4.8 1.2c5.52 0 10-4.34 10-9.99C22 6.34 17.52 2 12 2Zm0 18.15c-1.6 0-3.09-.44-4.36-1.2l-.31-.18-3.09.91.93-3-.2-.32a8.06 8.06 0 0 1-1.32-4.38c0-4.5 3.75-8.15 8.35-8.15s8.35 3.65 8.35 8.15-3.75 8.17-8.35 8.17Zm4.6-6.1c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.36-.78-1.86-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.06s.89 2.39 1.02 2.56c.13.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29Z"/></svg>
+            Solicitar orçamento no WhatsApp
+          </a>
+        </div>
+        <p class="cta-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>
+          Orçamento gratuito e sem compromisso
+        </p>
 
-        <div class="quote-contact">
-          <a href="https://wa.me/5521974793847" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.34 2 11.68c0 1.94.58 3.75 1.58 5.28L2 22l5.2-1.53a10.4 10.4 0 0 0 4.8 1.2c5.52 0 10-4.34 10-9.99C22 6.34 17.52 2 12 2Zm0 18.15c-1.6 0-3.09-.44-4.36-1.2l-.31-.18-3.09.91.93-3-.2-.32a8.06 8.06 0 0 1-1.32-4.38c0-4.5 3.75-8.15 8.35-8.15s8.35 3.65 8.35 8.15-3.75 8.17-8.35 8.17Zm4.6-6.1c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.36-.78-1.86-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.06s.89 2.39 1.02 2.56c.13.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29Z"/></svg>
+        <div class="final-contact">
+          <a href="https://wa.me/5521974793847" data-wa="" data-cta="contato-telefone">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.34 2 11.68c0 1.94.58 3.75 1.58 5.28L2 22l5.2-1.53a10.4 10.4 0 0 0 4.8 1.2c5.52 0 10-4.34 10-9.99C22 6.34 17.52 2 12 2Zm0 18.15c-1.6 0-3.09-.44-4.36-1.2l-.31-.18-3.09.91.93-3-.2-.32a8.06 8.06 0 0 1-1.32-4.38c0-4.5 3.75-8.15 8.35-8.15s8.35 3.65 8.35 8.15-3.75 8.17-8.35 8.17Zm4.6-6.1c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.36-.78-1.86-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.06s.89 2.39 1.02 2.56c.13.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29Z"/></svg>
             (21) 97479-3847
           </a>
           <a href="https://www.instagram.com/granortemarmoraria/" target="_blank" rel="noopener">
@@ -580,59 +708,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-      <form class="quote-form" id="quoteForm" novalidate>
-        <div class="form-row two-col">
-          <div class="field">
-            <label for="nome">Nome completo</label>
-            <input type="text" id="nome" name="nome" placeholder="Seu nome" required autocomplete="name">
-          </div>
-          <div class="field">
-            <label for="whatsapp">WhatsApp</label>
-            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(21) 9 0000-0000" required autocomplete="tel">
-          </div>
+      <div class="picker is-light">
+        <p class="picker-title">Qual é o seu projeto?</p>
+        <p class="picker-sub">Toque no tipo de projeto e fale com a gente no WhatsApp.</p>
+        <div class="picker-grid">
+          <a href="https://wa.me/5521974793847" data-wa="Cozinha e bancada" data-cta="chamada-final-tipo-projeto" class="picker-opt">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18v4H3Z"/><path d="M5 14v6M19 14v6M8 6h8M12 6V4"/></svg></span>
+            Cozinha e bancada
+          </a>
+          <a href="https://wa.me/5521974793847" data-wa="Banheiro e lavabo" data-cta="chamada-final-tipo-projeto" class="picker-opt">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v3H4Z"/><path d="M2 13h20l-2 8H4Z"/></svg></span>
+            Banheiro e lavabo
+          </a>
+          <a href="https://wa.me/5521974793847" data-wa="Área gourmet" data-cta="chamada-final-tipo-projeto" class="picker-opt">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18M5 12V8h14v4M6 12v8M18 12v8M9 4l1 4M15 4l-1 4"/></svg></span>
+            Área gourmet
+          </a>
+          <a href="https://wa.me/5521974793847" data-wa="Escada e revestimento" data-cta="chamada-final-tipo-projeto" class="picker-opt">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h5v-5h5v-5h5V6h3"/></svg></span>
+            Escada e revestimento
+          </a>
+          <a href="https://wa.me/5521974793847" data-wa="Comercial" data-cta="chamada-final-tipo-projeto" class="picker-opt">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5l8-3 8 3v16M9 21v-5h6v5M8 9h2M14 9h2M8 13h2M14 13h2"/></svg></span>
+            Comercial
+          </a>
+          <a href="https://wa.me/5521974793847" data-wa="Outro" data-cta="chamada-final-tipo-projeto" class="picker-opt">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
+            Outro
+          </a>
         </div>
-
-        <div class="form-row two-col">
-          <div class="field">
-            <label for="bairro">Bairro ou região</label>
-            <select id="bairro" name="bairro" required>
-              <option value="" disabled selected>Selecione</option>
-              <option value="Barra da Tijuca">Barra da Tijuca</option>
-              <option value="Recreio dos Bandeirantes">Recreio dos Bandeirantes</option>
-              <option value="Leblon">Leblon</option>
-              <option value="Ipanema">Ipanema</option>
-              <option value="Outro bairro">Outro bairro</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="projeto">Tipo de projeto</label>
-            <select id="projeto" name="projeto" required>
-              <option value="" disabled selected>Selecione</option>
-              <option value="Bancada de cozinha">Bancada de cozinha</option>
-              <option value="Bancada de banheiro">Bancada de banheiro</option>
-              <option value="Ilha de cozinha">Ilha de cozinha</option>
-              <option value="Lavatório">Lavatório</option>
-              <option value="Soleira ou pingadeira">Soleira ou pingadeira</option>
-              <option value="Nicho">Nicho</option>
-              <option value="Reparo ou restauração">Reparo ou restauração</option>
-              <option value="Outro">Outro</option>
-            </select>
-          </div>
+        <div class="picker-foot">
+          <span>Orçamento gratuito</span>
+          <span>Resposta em até 24h</span>
+          <span>Visita técnica</span>
         </div>
-
-        <div class="field">
-          <label for="mensagem">Conte um pouco do seu projeto (opcional)</label>
-          <textarea id="mensagem" name="mensagem" placeholder="Ambiente, medidas aproximadas, material de preferência..."></textarea>
-        </div>
-
-        <div class="form-submit">
-          <button type="submit" class="btn btn-gold btn-block" id="submitBtn" disabled>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.34 2 11.68c0 1.94.58 3.75 1.58 5.28L2 22l5.2-1.53a10.4 10.4 0 0 0 4.8 1.2c5.52 0 10-4.34 10-9.99C22 6.34 17.52 2 12 2Zm0 18.15c-1.6 0-3.09-.44-4.36-1.2l-.31-.18-3.09.91.93-3-.2-.32a8.06 8.06 0 0 1-1.32-4.38c0-4.5 3.75-8.15 8.35-8.15s8.35 3.65 8.35 8.15-3.75 8.17-8.35 8.17Zm4.6-6.1c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.36-.78-1.86-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.06s.89 2.39 1.02 2.56c.13.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29Z"/></svg>
-            Enviar pelo WhatsApp
-          </button>
-          <p class="form-hint">Ao enviar, você será direcionado ao WhatsApp da Granorte com sua mensagem já preenchida.</p>
-        </div>
-      </form>
+      </div>
     </div>
   </section>
 
@@ -644,13 +754,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="assets/img/logo-compact.png" alt="Granorte Marmoraria" width="775" height="280">
-        <p>Marmoraria de alto padrão no Rio de Janeiro, com fabricação sob medida em granito, mármore e quartzo.</p>
+        <p>Marmoraria de alto padrão no Rio de Janeiro, com fabricação própria em granito, mármore e quartzo.</p>
+        <a href="https://wa.me/5521974793847" data-wa="" data-cta="rodape" class="btn btn-wa" style="margin-top:20px;">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.34 2 11.68c0 1.94.58 3.75 1.58 5.28L2 22l5.2-1.53a10.4 10.4 0 0 0 4.8 1.2c5.52 0 10-4.34 10-9.99C22 6.34 17.52 2 12 2Zm0 18.15c-1.6 0-3.09-.44-4.36-1.2l-.31-.18-3.09.91.93-3-.2-.32a8.06 8.06 0 0 1-1.32-4.38c0-4.5 3.75-8.15 8.35-8.15s8.35 3.65 8.35 8.15-3.75 8.17-8.35 8.17Zm4.6-6.1c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.36-.78-1.86-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.06s.89 2.39 1.02 2.56c.13.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29Z"/></svg>
+          Falar no WhatsApp
+        </a>
       </div>
 
       <div class="footer-col">
         <h4>Atendimento</h4>
         <ul>
-          <li><a href="https://wa.me/5521974793847" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.34 2 11.68c0 1.94.58 3.75 1.58 5.28L2 22l5.2-1.53a10.4 10.4 0 0 0 4.8 1.2c5.52 0 10-4.34 10-9.99C22 6.34 17.52 2 12 2Zm0 18.15c-1.6 0-3.09-.44-4.36-1.2l-.31-.18-3.09.91.93-3-.2-.32a8.06 8.06 0 0 1-1.32-4.38c0-4.5 3.75-8.15 8.35-8.15s8.35 3.65 8.35 8.15-3.75 8.17-8.35 8.17Zm4.6-6.1c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.36-.78-1.86-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.06s.89 2.39 1.02 2.56c.13.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29Z"/></svg>(21) 97479-3847</a></li>
+          <li><a href="https://wa.me/5521974793847" data-wa="" data-cta="rodape-telefone"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.34 2 11.68c0 1.94.58 3.75 1.58 5.28L2 22l5.2-1.53a10.4 10.4 0 0 0 4.8 1.2c5.52 0 10-4.34 10-9.99C22 6.34 17.52 2 12 2Zm0 18.15c-1.6 0-3.09-.44-4.36-1.2l-.31-.18-3.09.91.93-3-.2-.32a8.06 8.06 0 0 1-1.32-4.38c0-4.5 3.75-8.15 8.35-8.15s8.35 3.65 8.35 8.15-3.75 8.17-8.35 8.17Zm4.6-6.1c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.36-.78-1.86-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.06s.89 2.39 1.02 2.56c.13.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29Z"/></svg>(21) 97479-3847</a></li>
           <li><a href="https://www.instagram.com/granortemarmoraria/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>@granortemarmoraria</a></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;width:16px;height:16px;color:#d9bf8d;vertical-align:-3px;margin-right:6px;"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Segunda a sábado, das 7h às 17h</li>
         </ul>
@@ -659,12 +773,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="footer-col">
         <h4>Navegação</h4>
         <ul>
+          <li><a href="#projetos">Projetos realizados</a></li>
           <li><a href="#sobre">Sobre a Granorte</a></li>
-          <li><a href="#projetos">Projetos</a></li>
           <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#diferenciais">Diferenciais</a></li>
-          <li><a href="#faq">Dúvidas frequentes</a></li>
-          <li><a href="#orcamento">Solicitar orçamento</a></li>
+            <li><a href="#faq">Dúvidas frequentes</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </div>
     </div>
@@ -676,8 +789,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
-<a href="https://wa.me/5521974793847?text=Olá, vim pelo site e gostaria de mais informações. _(Não apague essa mensagem para ter atendimento prioritário)_" class="wa-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.34 2 11.68c0 1.94.58 3.75 1.58 5.28L2 22l5.2-1.53a10.4 10.4 0 0 0 4.8 1.2c5.52 0 10-4.34 10-9.99C22 6.34 17.52 2 12 2Zm0 18.15c-1.6 0-3.09-.44-4.36-1.2l-.31-.18-3.09.91.93-3-.2-.32a8.06 8.06 0 0 1-1.32-4.38c0-4.5 3.75-8.15 8.35-8.15s8.35 3.65 8.35 8.15-3.75 8.17-8.35 8.17Zm4.6-6.1c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.36-.78-1.86-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.06s.89 2.39 1.02 2.56c.13.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29Z"/></svg>
+<a href="https://wa.me/5521974793847" data-wa="" data-cta="botao-flutuante" class="wa-float" aria-label="Solicitar orçamento no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.34 2 11.68c0 1.94.58 3.75 1.58 5.28L2 22l5.2-1.53a10.4 10.4 0 0 0 4.8 1.2c5.52 0 10-4.34 10-9.99C22 6.34 17.52 2 12 2Zm0 18.15c-1.6 0-3.09-.44-4.36-1.2l-.31-.18-3.09.91.93-3-.2-.32a8.06 8.06 0 0 1-1.32-4.38c0-4.5 3.75-8.15 8.35-8.15s8.35 3.65 8.35 8.15-3.75 8.17-8.35 8.17Zm4.6-6.1c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.36-.78-1.86-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.06s.89 2.39 1.02 2.56c.13.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.48-.6 1.69-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.29Z"/></svg>
+  <span class="wa-float-label">Orçamento no WhatsApp</span>
 </a>
 
 <script src="assets/js/script.js"></script>
